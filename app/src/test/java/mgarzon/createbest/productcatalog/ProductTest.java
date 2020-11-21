@@ -17,7 +17,7 @@ public class ProductTest extends TestCase {
     public void checkProductPrice(){
         //won't work :P
         Product product = new Product("1", "DELL MONITOR", 180);
-        assertEquals("Check the price of the product", 0, product.getPrice());
+        assertEquals("Check the price of the product", 180, product.getPrice());
     }
 
 }
