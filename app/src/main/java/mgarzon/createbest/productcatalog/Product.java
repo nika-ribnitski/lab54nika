@@ -5,39 +5,44 @@ package mgarzon.createbest.productcatalog;
  */
 
 public class Product {
-    private String _id;
-    private String _productname;
-    private double _price;
+    private String id;
+    private String productName;
+    private double price;
 
-    public Product() {
+    public Product(String id, String productName, double price) {
+        this.id = id;
+        this.productName = productName;
+        this.price = price;
     }
-    public Product(String id, String productname, double price) {
-        _id = id;
-        _productname = productname;
-        _price = price;
-    }
-    public Product(String productname, double price) {
-        _productname = productname;
-        _price = price;
-    }
+
 
     public void setId(String id) {
-        _id = id;
+
+        this.id = id;
     }
+
     public String getId() {
-        return _id;
+        return this.id;
     }
-    public void setProductName(String productname) {
-        _productname = productname;
+
+    public void setProductName(String productName) {
+
+        this.productName = productName;
     }
+
     public String getProductName() {
-        return _productname;
+
+        return this.productName;
     }
+
     public void setPrice(double price) {
-        _price = price;
+
+        this.price = price;
     }
+
     public double getPrice() {
-        return _price;
+
+        return this.price;
     }
 
 }
